@@ -21,7 +21,7 @@
       agendar sua mentoria
     </p>
 
-    <form>
+    <form id="form">
       <fieldset>
         <div class="fieldset-wrapper">
           <legend>Informações pessoais</legend>
@@ -31,14 +31,14 @@
             <div class="input-wrapper">
 
               <label for="mentoring-name">Nome</label>
-              <input type="text" id="mentoring-name">
+              <input type="text" id="mentoring-name" required>
 
             </div>
 
             <div class="input-wrapper">
 
               <label for="mentoring-lastname">Sobrenome</label>
-              <input type="text" id="mentoring-lastname">
+              <input type="text" id="mentoring-lastname" required>
 
             </div>
 
@@ -47,15 +47,15 @@
         
           <div class="input-wrapper">
 
-          <label for="mentoring-password">Email <span>(digite um email válido)</span></label>
+          <label for="mentoring-email">Email <span>(digite um email válido)</span></label>
           <input type="email" id="mentoring-email">
 
           </div>
 
           <div class="input-wrapper">
           
-            <label for="mentoring-name">Senha <span>(mínimo 6 caracteres)</span></label>
-            <input type="password" id="mentoring-password">
+            <label for="mentoring-password">Senha <span>(mínimo 6 caracteres)</span></label>
+            <input type="password" id="mentoring-password" minlength="6">
 
           </div>
 
@@ -116,22 +116,22 @@
 
             <div class="input-wrapper">
 
-              <label for="mentoring-date">Data <span>(DD/MM/AAAA)</span></label>
-              <input type="date" id="mentoring-date">
+              <label for="mentoring-date2">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="mentoring-date2">
 
             </div>
 
             <div class="input-wrapper">
 
-              <label for="mentoring-begin">Das</label>
-              <input type="time" id="mentoring-begin">
+              <label for="mentoring-begin2">Das</label>
+              <input type="time" id="mentoring-begin2">
 
             </div>
 
             <div class="input-wrapper">
 
-              <label for="mentoring-end">Até</label>
-              <input type="time" id="mentoring-end">
+              <label for="mentoring-end2">Até</label>
+              <input type="time" id="mentoring-end2">
 
             </div>
   
@@ -145,7 +145,7 @@
     </form>
 
     <footer>
-      <button>Salvar</button>
+      <button form="form">Salvar</button>
     </footer>
 
   </div>
